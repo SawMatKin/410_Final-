@@ -5,18 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kinnison Financial Planning - Contact</title>
     <link rel="stylesheet" href="styles.css"> 
+  
+	
+	
 </head>
 <body>
     <header>
         <div class="container">
-            <img src="logo.jpg" alt="Company Logo">
+            <a href="index.html"><img src="logo.jpg" alt="Company Logo"></a>
         </div>
     </header>
-    
-    <nav>
+     <nav>
         <div class="container">
             <ul>
-               <li class="nav-item">
+                <li class="nav-item">
                     <a href="index.html">About Us</a>
                     <a href="index.html"><img src="team.jpg" alt="About Photo"></a>
                 </li>
@@ -35,31 +37,84 @@
             </ul>
         </div>
     </nav>
-
+	
+	
     <main>
+   <style>
+      
+        .container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 10px;
+            width: 80%;
+            margin: auto;
+        }
+        .container h2 {
+            grid-column: span 4;
+        }
+        table {
+            grid-column: span 4;
+            width: 100%;
+        }
+        th, td {
+            padding: 8px;
+            border: 1px solid black;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
         <section id="contact">
             <div class="container">
-                <div class="contact-box">
-                    <h2>Email</h2>
-                    <p>Sawyer.Kinnison39089@bobcats.peru.edu</aside-left></p>
+                <div class="contact-info">
+                    <h2>Methods of Contact</h2>
+                    <table>
+                        <tr>
+                            <th>Contact Method</th>
+                            <th>Contact Information</th>
+                        </tr>
+                        <tr>
+                            <td>Email</td>
+                            <td>Sawyer.Kinnison39089@bobcats.peru.edu</td>
+                        </tr>
+                        <tr>
+                            <td>Telephone</td>
+                            <td>402-213-9877</td>
+                        </tr>
+                        <tr>
+                            <td>Address</td>
+                            <td>911 Central Ave, Nebraska City, NE 68410</td>
+                        </tr>
+                        <tr>
+                            <td>Fax</td>
+                            <td>402-714-9877</td>
+                        </tr>
+                    </table>
                 </div>
-                <div class="contact-box">
-                    <h2>Telephone</h2>
-                    <p>402-321-1234</p>
+                <div class="contact-image">
+                    <img src="icons.jpg" alt="Icons of Contact">
                 </div>
-                <div class="contact-box">
-                    <h2>Address</h2>
-                    <p>911 Central Ave, Nebraska City, NE 68410</p>
-                </div>
-                <div class="contact-box">
-                    <h2>Fax</h2>
-                    <p>402-714-9877</p>
+                <div class="contact-form">
+                    <h2>Contact Us</h2>
+                    <form action="#" method="post">
+                        <label for="firstName">First Name:</label><br>
+                        <input type="text" id="firstName" name="firstName"><br>
+                        <label for="lastName">Last Name:</label><br>
+                        <input type="text" id="lastName" name="lastName"><br>
+                        <label for="phoneNumber">Phone Number:</label><br>
+                        <input type="tel" id="phoneNumber" name="phoneNumber"><br>
+                        <label for="email">Email:</label><br>
+                        <input type="email" id="email" name="email"><br>
+                        <label for="reason">Reason for Contact:</label><br>
+                        <textarea id="reason" name="reason" rows="4" cols="50"></textarea><br><br>
+                        <input type="submit" value="Submit">
+                    </form>
                 </div>
             </div>
         </section>
     </main>
 
-   <footer> 
+    <footer> 
         <p>Kinnison Financial Planning<br />
         911 Central Ave &bull; Nebraska City, NE 68410<br />
         <a href="https://facebook.com" target="_blank">Facebook</a> | <a href="https://twitter.com/?lang=en" target="_blank">Twitter/X</a> |<a href="tel:+4021234769">Telephone</a> | <a href="mailto:Sawyer.Kinnison39089@bobcats.peru.edu">Email Us</a></p>
